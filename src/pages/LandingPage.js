@@ -7,6 +7,7 @@ import MostPicked from "parts/MostPicked";
 import Categories from "parts/Categories";
 
 import landingPage from "../json/landingPage.json";
+import Testimony from "parts/Testimony";
 
 class LandingPage extends Component {
   constructor(props) {
@@ -29,6 +30,7 @@ class LandingPage extends Component {
         <Categories 
           data={landingPage.categories}
         />
+        <Testimony data={landingPage.testimonial} />
       </>
     );
   }
