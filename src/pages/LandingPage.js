@@ -1,13 +1,14 @@
 /* eslint-disable no-useless-constructor */
 import React, { Component } from "react";
 
+import landingPage from "../json/landingPage.json";
+
 import Header from "parts/Header";
 import Hero from "parts/Hero";
 import MostPicked from "parts/MostPicked";
 import Categories from "parts/Categories";
-
-import landingPage from "../json/landingPage.json";
 import Testimony from "parts/Testimony";
+import Footer from "parts/Footer";
 
 class LandingPage extends Component {
   constructor(props) {
@@ -31,6 +32,7 @@ class LandingPage extends Component {
           data={landingPage.categories}
         />
         <Testimony data={landingPage.testimonial} />
+        <Footer />
       </>
     );
   }
